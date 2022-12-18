@@ -1,145 +1,76 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import { Link } from '@builder.io/qwik-city';
+import { PhoneIcon, BanknotesIcon, DevicePhoneMobileIcon } from "heroicons-qwik/24/outline";
 
+import 'src/index.css'
+import Form from '~/components/form';
 export default component$(() => {
   return (
-    <div>
-      <h1>
-        Welcome to Qwik <span class="lightning">⚡️</span>
-      </h1>
+    <div class="outside bg">
+      <div class="container">
+        
+        <div class="t-row">
+          <div class="left-box">
+            <div class="text">
+              <h2><b>CONSÓRCIO KAWASAKI BRASIL</b></h2>
+              <h1> <b>LIBERTE</b> SEU <b>SONHO</b> DE TER UMA <b>MOTO!</b> </h1>
+            </div>
 
-      <ul>
-        <li>
-          Check out the <code>src/routes</code> directory to get started.
-        </li>
-        <li>
-          Add integrations with <code>npm run qwik add</code>.
-        </li>
-        <li>
-          More info about development in <code>README.md</code>
-        </li>
-      </ul>
+            <div class="rows">
+              <div class="f-row">
+                <div>
+                  <h2>SEM <br /><i>JUROS</i></h2>
+                </div>
+                <div>
+                  <h2>SEM <br /><i>ENTRADA</i></h2>
+                </div>
+              </div>
+              <div class="s-row">
+                <div><h2>PLANOS DE ATÉ <br /><i>100 MESES</i></h2></div>
+              </div>
+            </div>
 
-      <h2>Commands</h2>
+          </div>
+          <div class="right-box">
+            <h2>Deixe suas informações e conheça os <b>planos e vantagens!</b></h2>
+            <Form />
+          </div>
+        </div>
 
-      <table class="commands">
-        <tr>
-          <td>
-            <code>npm run dev</code>
-          </td>
-          <td>Start the dev server and watch for changes.</td>
-        </tr>
-        <tr>
-          <td>
-            <code>npm run preview</code>
-          </td>
-          <td>Production build and start preview server.</td>
-        </tr>
-        <tr>
-          <td>
-            <code>npm run build</code>
-          </td>
-          <td>Production build.</td>
-        </tr>
-        <tr>
-          <td>
-            <code>npm run qwik add</code>
-          </td>
-          <td>Select an integration to add.</td>
-        </tr>
-      </table>
-
-      <h2>Add Integrations</h2>
-
-      <table class="commands">
-        <tr>
-          <td>
-            <code>npm run qwik add cloudflare-pages</code>
-          </td>
-          <td>
-            <a href="https://developers.cloudflare.com/pages" target="_blank">
-              Cloudflare Pages Server
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code>npm run qwik add express</code>
-          </td>
-          <td>
-            <a href="https://expressjs.com/" target="_blank">
-              Nodejs Express Server
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code>npm run qwik add netlify-edge</code>
-          </td>
-          <td>
-            <a href="https://docs.netlify.com/" target="_blank">
-              Netlify Edge Functions
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code>npm run qwik add static</code>
-          </td>
-          <td>
-            <a
-              href="https://qwik.builder.io/qwikcity/static-site-generation/overview/"
-              target="_blank"
-            >
-              Static Site Generation (SSG)
-            </a>
-          </td>
-        </tr>
-      </table>
-
-      <h2>Community</h2>
-
-      <ul>
-        <li>
-          <span>Questions or just want to say hi? </span>
-          <a href="https://qwik.builder.io/chat" target="_blank">
-            Chat on discord!
-          </a>
-        </li>
-        <li>
-          <span>Follow </span>
-          <a href="https://twitter.com/QwikDev" target="_blank">
-            @QwikDev
-          </a>
-          <span> on Twitter</span>
-        </li>
-        <li>
-          <span>Open issues and contribute on </span>
-          <a href="https://github.com/BuilderIO/qwik" target="_blank">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <span>Watch </span>
-          <a href="https://qwik.builder.io/media/" target="_blank">
-            Presentations, Podcasts, Videos, etc.
-          </a>
-        </li>
-      </ul>
-      <Link class="mindblow" href="/flower/">
-        Blow my mind 🤯
-      </Link>
+        <div class="b-row">
+          <div class="carac">
+            <div>
+              <span>
+                <PhoneIcon class="icon"/>
+              </span>
+              <h3>Atendimento<br />
+                <span>(16) 2103-3536</span></h3>
+            </div>
+            <div>
+              <span><BanknotesIcon class="icon"/></span>
+              <h3>Vendas<br /><span>0800 943 3500</span></h3>
+            </div>
+            <div>
+              <span><DevicePhoneMobileIcon class="icon" /></span>
+              <h3>WhatsApp Atendimento<br /><span>(16) 2103-3535</span></h3>
+            </div>
+            <div>
+              <span><DevicePhoneMobileIcon class="icon" /></span>
+              <h3>WhatsApp Vendas<br /><span>(16) 2103-3501</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'Welcome to Qwik',
+  title: 'Consórcio Kawasaki Brasil',
   meta: [
     {
       name: 'description',
-      content: 'Qwik site description',
+      content: 'Aqui você encontra diversas formas de fazer seu consórcio.',
     },
   ],
 };
