@@ -53,6 +53,7 @@ export const about = `
         background-repeat: no-repeat;
     }
     .container__about {
+        padding: 3em 0;
         background-color: #000;
         min-height: 100vh;
     }
