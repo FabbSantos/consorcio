@@ -1,0 +1,91 @@
+.outside__carousel {
+    width: 100vw;
+
+    background-image: url("src/assets/img/bg-carousel.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container__carousel {
+    background-color: #000;
+}
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    background-color: transparent;
+    font-size: 20em;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+ul::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 3rem;
+
+    aspect-ratio: 2/1;
+    width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+li:nth-child(odd) {
+    background-color: salmon;
+}
+
+li:nth-child(even) {
+    background-color: rebeccapurple;
+}
+
+@media (max-width: 768px){
+    .container__carousel {
+        height: auto;
+        width: 100%;
+        padding: 5%;
+        display: block;
+    }
+    .outside__carousel {
+        background-image: none;
+    }
+    .content {
+        flex-direction: column;
+    }
+}
