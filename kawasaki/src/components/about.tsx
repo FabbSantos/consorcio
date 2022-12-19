@@ -54,7 +54,7 @@ export const about = `
     }
     .container__about {
         background-color: #000;
-
+        min-height: 100vh;
     }
     .content {
         display: flex;
