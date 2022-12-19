@@ -5,6 +5,7 @@ import { PhoneIcon, BanknotesIcon, DevicePhoneMobileIcon } from "heroicons-qwik/
 import 'src/index.css'
 import About from '~/components/about';
 import Form from '~/components/form';
+import HowWork from '~/components/howWork';
 export default component$(() => {
   return (
     <>
@@ -65,6 +66,7 @@ export default component$(() => {
         </div>
       </div>
       <About />
+      <HowWork />
     </>
   );
 });
