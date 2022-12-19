@@ -1,4 +1,5 @@
 import { component$, Slot } from '@builder.io/qwik';
+import Footer from '~/components/footer';
 import Header from '../components/header/header';
 
 export default component$(() => {
@@ -11,9 +12,7 @@ export default component$(() => {
         </section>
       </main>
       <footer>
-        <a href="https://www.builder.io/" target="_blank">
-          Made with ♡ by Fabrício Bahiense
-        </a>
+        <Footer/>
       </footer>
     </>
   );

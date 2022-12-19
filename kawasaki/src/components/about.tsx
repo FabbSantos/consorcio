@@ -10,7 +10,7 @@ export default component$(() => {
             <div class="container container__about">
                 <div class="content">
                     <div class="left">
-                        <img src={moto} alt="Moto Ninja 400" loading='lazy'  height="auto" width="80%"/>
+                        <img src={moto} alt="Moto Ninja 400" loading='lazy'  height="440px" width="440px"/>
                     </div>
                     <div class="right">
                         <div class="why">

@@ -77,6 +77,7 @@ export const how =`
         max-height: 100%;
     }
     .content__how {
+        margin-top: 4em;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
