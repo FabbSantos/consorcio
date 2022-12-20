@@ -41,7 +41,14 @@ export default component$(() => {
                     </div>
                     <div class="s-row">
                         <div class="item">
-                            <p>Âncora Administradora de Consórcios S.A.CNPJ.: 60.375.243/0001-36Av. Dr Antônio Barbosa Filho, 1260Jd. Consolação - Franca/SP - CEP.: 14400-005Banco Central do Brasil / www.bcb.gov.br / 145Aut. Bacen 03/00/188/89</p>
+                            <p>
+                                Âncora Administradora de Consórcios S.A.<br />
+                                CNPJ.: 60.375.243/0001-36<br />
+                                Av. Dr Antônio Barbosa Filho, 1260<br />
+                                Jd. Consolação - Franca/SP<br />
+                                CEP: 14400-005<br />
+                                Banco Central do Brasil / www.bcb.gov.br / 145<br/>
+                                Aut. Bacen 03/00/188/89</p>
                         </div>
                         <div class="item"><img src={ancora} alt="Âncora" loading='lazy'  width="275px" height="73px"/>
                         </div>

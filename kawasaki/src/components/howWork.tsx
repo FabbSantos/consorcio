@@ -68,7 +68,7 @@ export const how =`
         min-height: 100vh;
         width: 100vw;
 
-        background-image: url("src/assets/img/sobre.webp");
+        background-image: url("sobre.webp");
         background-size: cover;
         background-repeat: no-repeat;
     }
