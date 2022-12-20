@@ -7,7 +7,6 @@ import CarouselMotos from '~/components/carousel-motos/carousel';
 import About from '~/components/about';
 import Form from '~/components/form';
 import HowWork from '~/components/howWork';
-import Moto from '~/components/moto';
 export default component$(() => {
   return (
     <>
@@ -67,7 +66,7 @@ export default component$(() => {
           </div>
         </div>
       </div>
-      <Moto/>
+      {/* <Moto/> */}
       <CarouselMotos />
       <About />
       <HowWork />

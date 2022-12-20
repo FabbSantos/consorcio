@@ -1,4 +1,5 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
+import Moto from '../moto';
 import styles from './carousel.css?inline';
 
 export default component$(() => {
@@ -41,12 +42,12 @@ export default component$(() => {
                       element.scrollIntoView();
                 }}>&gt;</div>
                 <ul class="motos_items">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
+                      <li><Moto /></li>
+                      <li><Moto /></li>
+                      <li><Moto /></li>
+                      <li><Moto /></li>
+                      <li><Moto /></li>
+                      <li><Moto /></li>
                 </ul>
             </div>
         </div>
