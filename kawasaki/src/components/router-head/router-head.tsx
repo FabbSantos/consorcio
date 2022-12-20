@@ -14,7 +14,10 @@ export const RouterHead = component$(() => {
 
       <link rel="canonical" href={loc.href} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      {/* <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> */}
+      <meta name="msapplication-TileImage" content="cropped-bandeira-sem-fundo-1-1-270x270.png" />
+      <link rel="icon" href="cropped-bandeira-sem-fundo-1-1-32x32.png" sizes="32x32" />
+      <link rel="icon" href="cropped-bandeira-sem-fundo-1-1-192x192.png" sizes="192x192" />
 
       {head.meta.map((m) => (
         <meta {...m} />
