@@ -58,7 +58,7 @@ export default component$(() => {
 
 export const moto = `
     .outside__moto {
-        // background-image: url("src/assets/img/second_part.webp");
+        // background-image: url("second_part.webp");
         background-size: cover;
         background-repeat: no-repeat;
     }
