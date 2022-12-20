@@ -8,6 +8,9 @@
   min-height: 90vh;
 }
 
+body > main > section > div.outside.bg > div > div.t-row > div.left-box > div.text {
+    text-align: left;
+}
 .t-row {
     display: flex;
     width: 100%;
