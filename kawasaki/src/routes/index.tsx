@@ -3,7 +3,7 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 import { PhoneIcon, BanknotesIcon, DevicePhoneMobileIcon } from "heroicons-qwik/24/outline";
 
 import 'src/index.css'
-import Carousel from '~/components/carousel/carousel';
+import CarouselMotos from '~/components/carousel-motos/carousel';
 import About from '~/components/about';
 import Form from '~/components/form';
 import HowWork from '~/components/howWork';
@@ -68,7 +68,7 @@ export default component$(() => {
         </div>
       </div>
       <Moto/>
-      <Carousel />
+      <CarouselMotos />
       <About />
       <HowWork />
     </>
