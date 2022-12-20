@@ -13,7 +13,7 @@
     position: absolute;
     height: 100%;
     background-color: transparent;
-    font-size: 10em;
+    font-size: 3em;
     display: flex;
     vertical-align: middle;
     justify-content: center;
@@ -22,11 +22,11 @@
 }
 
 .prev {
-    left: 0;
+    left: 2%;
 }
 
 .next {
-    right: 0;
+    right: 2%;
 }
 
 ul {
