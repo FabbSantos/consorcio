@@ -48,7 +48,7 @@ export const about = `
         min-height: 100vh;
         width: 100vw;
 
-        background-image: url("src/assets/img/bg-about.webp");
+        background-image: url("bg-about.webp");
         background-size: cover;
         background-repeat: no-repeat;
     }
