@@ -6,6 +6,7 @@ import 'src/index.css'
 import About from '~/components/about';
 import Form from '~/components/form';
 import HowWork from '~/components/howWork';
+import Moto from '~/components/moto';
 export default component$(() => {
   return (
     <>
@@ -65,6 +66,7 @@ export default component$(() => {
           </div>
         </div>
       </div>
+      <Moto/>
       <About />
       <HowWork />
     </>
