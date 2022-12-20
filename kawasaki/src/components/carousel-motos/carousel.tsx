@@ -1,5 +1,6 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
 import styles from './carousel.css?inline';
+import Moto from '../moto';
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -13,40 +14,31 @@ export default component$(() => {
 
                       if (!container) return;
                 
-                      const currentIndex = Math.abs(container.scrollLeft / container.offsetWidth) | 0;
-                      const lastItemIndex = document.querySelectorAll('.motos_items > li').length;
+                      const currentIndex = Math.round(container.scrollLeft / container.offsetWidth) | 0;
+                      const lastItemIndex = document.querySelectorAll('.motos_items > li').length - 1;
                       const prevCssIndex = currentIndex == 0
                           ? lastItemIndex
-                          : currentIndex;
-                      const element = document.querySelector(`.motos_items > li:nth-child(${prevCssIndex})`) as HTMLElement | null;
-                
-                      if (!element) return;
-                
-                      element.scrollIntoView();
+                          : currentIndex - 1;
+                      
+                      container.scrollTo({behavior: 'smooth', left: container.offsetWidth * prevCssIndex});
                 }}>&lt;</div>
                   <div class="next" onClick$={() => {
                       const container = document.querySelector('.motos_items') as HTMLElement | null;
 
                       if (!container) return;
                 
-                      const currentIndex = Math.abs(container.scrollLeft / container.offsetWidth) | 0;
+                      const currentIndex = Math.round(container.scrollLeft / container.offsetWidth) | 0;
                       const lastItemIndex = document.querySelectorAll('.motos_items > li').length - 1;
                       const nextCssIndex = currentIndex == lastItemIndex
-                          ? 1
-                          : currentIndex + 2;
-                      const element = document.querySelector(`.motos_items > li:nth-child(${nextCssIndex})`) as HTMLElement | null;
-                
-                      if (!element) return;
-                
-                      element.scrollIntoView();
+                          ? 0
+                          : currentIndex + 1;
+                      container.scrollTo({behavior: 'smooth', left: container.offsetWidth * nextCssIndex});
                 }}>&gt;</div>
                 <ul class="motos_items">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
+                    <li><Moto /></li>
+                    <li><Moto /></li>
+                    <li><Moto /></li>
+                    <li><Moto /></li>
                 </ul>
             </div>
         </div>
