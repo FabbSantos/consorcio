@@ -1,5 +1,4 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
-import Moto from '../moto';
 import styles from './carousel.css?inline';
 import Moto from '../moto';
 
