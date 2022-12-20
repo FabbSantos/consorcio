@@ -7,6 +7,14 @@ header .logo a {
   display: inline-block;
   padding: 10px 10px 7px 20px;
 }
+header .logo {
+  margin-left: 12em;
+}
+@media (max-width: 768px){
+  header .logo {
+    margin-left: 0;
+  }
+}
 
 header ul {
   margin: 0 auto;

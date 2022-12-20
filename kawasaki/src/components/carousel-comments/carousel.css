@@ -1,0 +1,138 @@
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    background-color: transparent;
+    font-size: 3em;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.prev {
+    left: 2%;
+}
+
+.next {
+    right: 2%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+ul::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 3rem;
+
+    aspect-ratio: 2/1;
+    width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    overflow: hidden;
+}
+
+.container-comments {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+}
+
+.comment_item {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #000;
+    border-radius: 30px;
+    padding: 20px;
+    width: 70%;
+}
+.comment_item .text {
+    text-align: right;
+    width: 80%;
+    margin-bottom: 0;
+}
+.comment_item h3 {
+    font-weight: 800;
+    font-size: .5em;
+}
+.comment_item p {
+    font-weight: 400;
+    font-size: 0.4em;
+}
+.comment_item .image {
+    position: absolute;
+    /* top: 70%; */
+    left: -13%;
+}
+.comment_item .image img {
+    width: 80%;
+}
+
+@media (max-width: 768px){
+    .container__carousel {
+        height: auto;
+        width: 100%;
+        padding: 5%;
+        display: block;
+    }
+    .outside__carousel {
+        background-image: none;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .comment_item {
+        width: 100%;
+        margin-top: 5em;
+    }
+    .comment_item .text {
+        text-align: center;
+        width: 100%;
+        padding-top: 2em;
+    }
+    .comment_item .image {
+        left: 15%;
+        top: -48%;
+    }
+    .comment_item .text {
+        padding-top: 0; 
+    }
+    .prev, .next {
+        font-size: 5em;
+    }
+    li {
+        overflow: initial;
+    }
+
+}

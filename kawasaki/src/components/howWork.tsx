@@ -139,6 +139,10 @@ export const how =`
     @media (max-width: 768px){
         .how__work{
             margin-top: 2em;
+            max-width: 100vw;
+        }
+        .content__how{
+            width: 100%;
         }
         .how__work .items {
             flex-direction: column;
