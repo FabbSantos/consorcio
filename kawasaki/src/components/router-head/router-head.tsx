@@ -8,13 +8,11 @@ import { useDocumentHead, useLocation } from '@builder.io/qwik-city';
 
 export const RouterHead = component$(() => {
 
-  const clarity = `<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
+  const clarity = `(function(c,l,a,r,i,t,y){
     c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) }};
   t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
   y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "f635ucsahn");
-  </script>`
+      })(window, document, "clarity", "script", "f635ucsahn");`
 
   const head = useDocumentHead();
   const loc = useLocation();
@@ -29,7 +27,7 @@ export const RouterHead = component$(() => {
       <meta name="msapplication-TileImage" content="cropped-bandeira-sem-fundo-1-1-270x270.png" />
       <link rel="icon" href="cropped-bandeira-sem-fundo-1-1-32x32.png" sizes="32x32" />
       <link rel="icon" href="cropped-bandeira-sem-fundo-1-1-192x192.png" sizes="192x192" />
-      <script> {clarity} </script>
+      <script type="text/javascript"> {clarity} </script>
      
 
       {head.meta.map((m) => (
