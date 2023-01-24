@@ -31,7 +31,9 @@ export default component$(() => {
                                     <li>Atendimento humanizado e prático.</li>
                                 </ul>
                             </p>
-                            <button>
+                            <button
+                                onClick$={() => { window.scrollTo(0, 0); }}
+                            >
                                 Fale com um Consultor
                             </button>
                         </div>

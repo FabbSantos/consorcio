@@ -15,6 +15,9 @@
   --qwik-dark-purple: #713fc2;
   --green-k: #337A01;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
