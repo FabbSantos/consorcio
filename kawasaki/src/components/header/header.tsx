@@ -8,32 +8,8 @@ export default component$(() => {
   return (
     <header>
       <div class="logo">
-        <a href="#" target="_blank">
           <KawaLogo />
-        </a>
       </div>
-      <ul>
-        <li>
-          <a href="#" target="_blank">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            Quem Somos
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            Como Funciona
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <button class="sim">Faça uma Simulação</button> 
-          </a>
-        </li>
-      </ul>
     </header>
   );
 });

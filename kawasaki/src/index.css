@@ -5,7 +5,10 @@
 }
 .outside {
   width: 100%;
-  min-height: 90vh;
+  min-height: 76vh;
+}
+.outside_first{
+  height: 76vh;
 }
 
 body > main > section > div.outside.bg > div > div.t-row > div.left-box > div.text {
