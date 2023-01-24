@@ -15,7 +15,9 @@ export default component$(() => {
                                 <p>R$35.810</p>
                             </div>
 
-                            <button>Fale com um Consultor</button>
+                            <button
+                                onClick$={() => { window.scrollTo(0, 0); }}
+                            >Fale com um Consultor</button>
                         </div>
                         <div class="right">
                             <img src={moto2} alt="Ninja 400" loading='lazy' height="315px" width="530px" />
