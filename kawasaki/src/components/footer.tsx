@@ -10,35 +10,6 @@ export default component$(() => {
         <div class="outside__footer">
             <div class="container container__footer">
                 <div class="content__footer">
-                    <div class="f-row">
-                        <div class="item">
-                            <h3>Âncora Consórcios</h3>
-                            <p>© 2022 - Todos direitos reservados</p>
-                        </div>
-                        <div class="item">
-                            <h3>Institucional</h3>
-                            <a href="#">Fale Conosco</a>
-                            <a href="#">Quem Somos</a>
-                            <a href="#">Política de Privacidade</a>
-
-                        </div>
-                        <div class="item">
-                            <h3>Consórcio</h3>
-                            <a href="#">Sobre o Consórcio</a>
-                            <a href="#">Tire suas Dúvidas</a>
-                            <a href="#">Consulta de Cancelados</a>
-
-                        </div>
-                        <div class="item">
-                            <h3>Central de vendas</h3>
-                            <a href="#">0800 943 3500</a>
-                            <p>Segunda a Sexta, das 9h às 18h</p>
-                        </div>
-                        <div class="item">
-                            <button>Área do Cliente</button>
-                            <button>Área da Concessionária</button>
-                        </div>
-                    </div>
                     <div class="s-row">
                         <div class="item">
                             <p>
@@ -68,49 +39,6 @@ export const foot =`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .content__footer .f-row {
-        display: flex;
-        gap: 5em;
-        padding: 40px 0px;
-        justify-content: space-around;
-        align-items: flex-start; 
-    }
-    .content__footer .f-row .item {
-        display: flex;
-        gap: 1em;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        text-align: left;
-        
-        width: calc(100%/5);
-    }
-    .content__footer .f-row .item a {
-        color: white;
-        text-decoration: none; 
-    }
-    .content__footer .f-row .item a:hover {
-        color: var(--green-k);
-        text-decoration: underline;
-    }
-    .content__footer .f-row .item a:visited {
-        color: var(--green-k);
-    }
-    .content__footer .f-row .item button {
-        font-family: "Montserrat", sans-serif;
-        font-size: .9em;
-        font-weight: bold;
-        border-radius: 30px; 
-        text-align: center;
-        background-color: var(--green-k);
-        color: white;
-        width: 100%;
-        padding: 10px 20px; 
-    }
-    .content__footer .f-row .item button:hover {
-        filter: contrast(80%);
-        cursor: pointer;
     }
     .content__footer .s-row {
         display: flex;

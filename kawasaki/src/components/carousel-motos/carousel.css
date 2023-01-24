@@ -5,9 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.container__carousel {
-    /* background-color: #000; */
-}
+
 .content {
     position: relative;
     display: flex;

@@ -8,7 +8,10 @@ header .logo a {
   padding: 10px 10px 7px 20px;
 }
 header .logo {
-  margin-left: 12em;
+  padding: 16px 10px 16px 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 @media (max-width: 768px){
   header .logo {

@@ -17,8 +17,8 @@ export default component$(() => {
 
 export const comment =`
     .comment {
-        margin-top: 8em;
-        margin-bottom: 8em;
+        margin-top: 4em;
+        margin-bottom: 2em;
         width: 100%;
         display: flex;
         flex-direction: column;
